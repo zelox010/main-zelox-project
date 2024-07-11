@@ -86,8 +86,8 @@
     <div class="mode-toggle" onclick="toggleMode()">
         <span id="mode-icon">🌞</span>
     </div>
-    <h1>Welcome to</h1>
-    <h1>Zelox Projects</h1>
+    <h1 class="welcome">Welcome to</h1>
+    <h1 class="welcome">Zelox Projects</h1>
     <button onclick="showProjects()">Projects</button>
 
     <div class="projects-container" id="projects-container">
@@ -113,7 +113,7 @@
         }
 
         function showProjects() {
-            const welcomeText = document.querySelectorAll('h1');
+            const welcomeText = document.querySelectorAll('.welcome');
             const projectsButton = document.querySelector('button');
             const projectsContainer = document.getElementById('projects-container');
             
