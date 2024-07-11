@@ -94,6 +94,8 @@
         <h1>Zelox Projects</h1>
         <button onclick="openProject('https://zelox010.github.io/Interactive-obj/')">Interactive Square</button>
         <p>Project 1</p>
+        <button onclick="openProject('https://zelox010.github.io/Tic-Tac-Toe/')">Tic Tac Toe</button>
+        <p>Project 2</p>
     </div>
 
     <script>
@@ -111,11 +113,11 @@
         }
 
         function showProjects() {
-            const welcomeText = document.querySelector('h1');
+            const welcomeText = document.querySelectorAll('h1');
             const projectsButton = document.querySelector('button');
             const projectsContainer = document.getElementById('projects-container');
             
-            welcomeText.style.display = 'none';
+            welcomeText.forEach((el) => el.style.display = 'none');
             projectsButton.style.display = 'none';
             projectsContainer.style.display = 'flex';
         }
