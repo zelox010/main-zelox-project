@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Icon Menu</title>
   <style>
-    /* Existing styles */
     * {
       padding: 0;
       margin: 0;
@@ -76,7 +75,6 @@
       transition-delay: 0.5s, 1.5s, 1.5s;
       border-radius: 10px;
       filter: drop-shadow(0 0 5px var(--clr));
-      rotate: 135deg;
     }
     .menu.active li:hover a::before {
       background: var(--clr);
@@ -111,7 +109,7 @@
       <a href="#"><ion-icon name="home-outline"></ion-icon></a>
     </li>
     <li style="--i: 1; --clr: #fea600">
-      <a href="fun-projects.html"><ion-icon name="game-controller-outline"></ion-icon></a>
+      <a href="https://zelox010.github.io/Web2/" target="_self"><ion-icon name="game-controller-outline"></ion-icon></a>
     </li>
   </ul>
   <audio id="toggleSound">
@@ -137,16 +135,16 @@
 
       menuToggle.onclick = function () {
         menu.classList.toggle("active");
-        toggleSound.currentTime = 0; // Reset the audio to start from the beginning
+        toggleSound.currentTime = 0;
         toggleSound.play();
         if (menu.classList.contains("active")) {
-          openSound.currentTime = 0; // Reset the audio to start from the beginning
+          openSound.currentTime = 0;
           openSound.play();
         }
       };
 
       $("a").mouseenter(function() {
-        hoverSound.currentTime = 0; // Reset the audio to start from the beginning
+        hoverSound.currentTime = 0;
         hoverSound.play();
       });
     });
